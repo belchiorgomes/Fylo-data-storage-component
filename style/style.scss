@@ -102,11 +102,22 @@ body{
                 left: 3px;
                 display: block;
                 content: "";
-                width: 70%;
+                width: 80%;
                 height: 18px;
                 background-image: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
                 border-radius: inherit;
+            }
 
+            &::before{
+                position: absolute;
+                top: 4px;
+                right: 53px;
+                content: "";
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: $Blue-200;
+                z-index: 1;
             }
         }
     }
