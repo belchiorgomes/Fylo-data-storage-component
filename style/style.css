@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Raleway", sans-serif;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -51,4 +52,46 @@ body {
   gap: 1.3rem;
   height: -moz-max-content;
   height: max-content;
+}
+#container #container-logo {
+  border-top-right-radius: 5rem;
+}
+#container #container-logo .container-logo-file {
+  display: flex;
+  gap: 1.3rem;
+}
+#container #container-logo .container-logo-file a {
+  display: flex;
+  padding: 10px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.8rem;
+}
+#container #container-logo .container-logo-file a img {
+  width: 20px;
+  height: 20px;
+}
+#container #container-date p {
+  color: hsl(229, 7%, 55%);
+}
+#container #container-date p span {
+  color: hsl(243, 100%, 93%);
+  font-weight: bold;
+}
+#container #container-date .container-barra {
+  position: relative;
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+  padding: 12px;
+  border-radius: 0.8rem;
+}
+#container #container-date .container-barra::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: block;
+  content: "";
+  width: 70%;
+  height: 18px;
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: inherit;
 }/*# sourceMappingURL=style.css.map */
