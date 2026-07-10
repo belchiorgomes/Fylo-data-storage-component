@@ -50,8 +50,6 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 1.3rem;
-  height: -moz-max-content;
-  height: max-content;
 }
 #container #container-logo {
   border-top-right-radius: 5rem;
@@ -70,12 +68,20 @@ body {
   width: 20px;
   height: 20px;
 }
+#container #container-date {
+  position: relative;
+}
 #container #container-date p {
   color: hsl(229, 7%, 55%);
 }
 #container #container-date p span {
   color: hsl(243, 100%, 93%);
   font-weight: bold;
+}
+#container #container-date .dados {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
 #container #container-date .container-barra {
   position: relative;
@@ -105,4 +111,24 @@ body {
   border-radius: 50%;
   background-color: hsl(243, 100%, 93%);
   z-index: 1;
+}
+#container #container-date .balloon {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1.3rem;
+  border-radius: 0.8rem;
+  background-color: white;
+  text-transform: uppercase;
+}
+#container #container-date .balloon span:nth-child(1) {
+  font-weight: bold;
+  font-size: 22px;
+}
+#container #container-date .balloon span:nth-child(2) {
+  font-size: 12px;
+  color: hsl(228, 56%, 26%);
 }/*# sourceMappingURL=style.css.map */
